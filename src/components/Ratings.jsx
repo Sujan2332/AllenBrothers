@@ -1,12 +1,13 @@
 import React from "react";
 import { ratingsData } from "../assets/data"; // Import Data
+import "../styles/Ratings.css"
 
 const Ratings = () => {
   // Calculate the percentage for each rating
   const totalReviews = ratingsData.totalReviews;
   
   return (
-    <div className="d-flex flex-row align-items-start justify-content-between gap-5 w-100">
+    <div className="d-flex align-items-start justify-content-between  w-100 ratings-container">
       
       {/* ⭐ Product Rating Section */}
       <div className="d-flex flex-column align-items-start justify-content-start gap-2" style={{ flex: "0 0 auto" }}>
@@ -31,13 +32,13 @@ const Ratings = () => {
       </div>
 
       {/* 📊 Ratings Breakdown with Progress Bars */}
-      <div className="d-flex flex-column align-items-start justify-content-start gap-2" style={{ flex: "1" }}>
+      <div className="d-flex flex-column align-items-start justify-content-start gap-2 w-100" style={{ flex: "1" }}>
         {ratingsData.ratingBreakdown.map((rating) => (
-          <div key={rating.star} className="d-flex align-items-center my-1 gap-2 w-100">
+          <div key={rating.star} className="d-flex align-items-center my-1 gap-2 w-100 progress-bar-container">
             <span className="text-decoration-underline">{rating.star} stars</span>
-            <div className="progress mx-2 w-100" style={{ flex: "1",width:"100%", height: "15px" }}>
+            <div className="progress mx-2 w-100 border" style={{ flex: "1",width:"100%", height: "15px" }}>
               <div
-                className="progress-bar progress-bar-striped progress-bar-animated bg-primary rounded-4"
+                className="progress-bar border progress-bar-striped progress-bar-animated bg-primary rounded-4"
                 role="progressbar"
                 style={{
                   width: `${(rating.count / totalReviews) * 100}%`
@@ -50,7 +51,7 @@ const Ratings = () => {
       </div>
 
       {/* 📝 Review Button */}
-      <div className="d-flex flex-column align-items-start gap-2" style={{ flex: "0 0 auto" }}>
+      <div className="d-flex flex-column align-items-start gap-1" style={{ flex: "0 0 auto" }}>
         <p>Let us know your thoughts!</p>
         <button className="btn btn-primary">
           <i className="fa-solid fa-pen-to-square"></i> Write a Review

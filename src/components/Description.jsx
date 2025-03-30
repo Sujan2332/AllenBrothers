@@ -3,7 +3,7 @@ import CookingInstructions from "./CookingInstructions";
 import "../styles/Description.css"
 const Description = () => {
   return (
-    <div className="description-container d-flex flex-row justify-content-between align-items-start gap-5 py-5">
+    <div className="description-container d-flex justify-content-between align-items-start gap-5 py-5">
       {/* Cooking Instructions Section */}
       <div className="description-section">
       <CookingInstructions />
@@ -13,7 +13,6 @@ const Description = () => {
       <video 
         src="" 
         width="100%" 
-        height="500" 
         className="product-video rounded-3 border"
         controls
       />

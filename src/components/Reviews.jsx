@@ -20,20 +20,20 @@ const ReviewList = () => {
   };
 
   return (
-    <div className="mt-4 w-100 d-flex flex-column align-items-center justify-content-start">
+    <div className="mt-4 w-100 d-flex align-items-center justify-content-start reviews-container">
       {/* Review List */}
-      <div className="d-flex flex-column align-items-center justify-content-between w-100" style={{ rowGap: "30px" }}>
+      <div className="d-flex flex-column align-items-center justify-content-between w-100 reviews-list" style={{ rowGap: "30px" }}>
         {currentReviews.map((review) => (
-          <div key={review.id} className="d-flex flex-row justify-content-between align-items-start w-100 pb-3">
+          <div key={review.id} className="d-flex justify-content-between align-items-start w-100 pb-3 reviews-item">
             {/* Customer Name & Verified Badge */}
-            <div className="d-flex flex-column gap-0" style={{ width: "20%" }}>
+            <div className="d-flex gap-0 reviews-customer">
               <strong className="fs-5">{review.customer}</strong>
               <small className="text-muted">{review.date}</small>
               {review.verified && <strong className="">Verified Buyer</strong>}
             </div>
 
             {/* Review Content */}
-            <div className="d-flex flex-column gap-1" style={{ width: "75%" }}>
+            <div className="d-flex flex-column gap-1 review-content" style={{ width: "75%" }}>
               <strong className="fs-5">{review.title}</strong>
               <span className="text-warning fs-5 d-flex gap-1">
                 <i className="fa-solid fa-star"></i>
@@ -42,7 +42,7 @@ const ReviewList = () => {
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star-half-stroke"></i>
               </span>
-              <p>{review.text}</p>
+              <p className="review-text">{review.text}</p>
               <small className="text-muted d-flex align-items-center gap-2">
                 Helpful ? <i className="fa-solid fa-thumbs-up"></i> ({review.helpful})
               </small>

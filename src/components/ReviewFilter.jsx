@@ -1,9 +1,10 @@
 import React from "react";
 import { reviewFilters, sortOptions } from "../assets/data"; // Import Data
+import "../styles/ReviewFilter.css"
 
 const ReviewFilter = () => {
   return (
-    <div className="mt-4 w-100 d-flex flex-row align-items-start justify-content-start gap-5">
+    <div className="mt-4 w-100 d-flex align-items-start justify-content-start filter-container">
       
       {/* 📌 Filter by Section */}
       <div className="d-flex flex-row align-items-center justify-content-start gap-2">

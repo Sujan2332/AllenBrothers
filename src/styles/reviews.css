@@ -20,4 +20,43 @@
     margin: 10px;
     cursor: pointer;
   }
+
+  .reviews-container,.reviews-list,.reviews-customer{
+    flex-direction: column;
+  }
+  .reviews-customer{
+    width: 20%;
+  }
+  .reviews-item{
+    flex-direction: row;
+  }
+
+
+
+  @media (max-width:768px){
+    .reviews-container{
+      flex-direction: column;
+      width: 100%;
+    }
+    .reviews-list{
+      flex-direction: row;
+    }
+    .reviews-customer{
+      flex-direction: column;
+      width: 100%;
+      border-bottom: 1px solid grey;
+      padding-bottom: 10px;
+    }
+    .reviews-item{
+      flex-direction: column;
+    }
+    .review-content{
+      padding-top: 10px;
+      min-width:100%;
+    }
+    .review-text{
+      text-align: justify;
+      width: 100%;
+    }
+  }
   

@@ -1,8 +1,8 @@
 import React from "react";
-
+import "../styles/FooterLast.css"
 const FooterLast = () => {
   return (
-    <div className="bg-primary w-100 main py-2 text-white d-flex flex-row align-items-center justify-content-between">
+    <footer className="bg-primary w-100 main py-2 text-white d-flex align-items-center footer-last-container">
       
       {/* 🏷️ Copyright Notice */}
       <div>© 2024 Allen Brothers. All Rights Reserved.</div>
@@ -13,7 +13,7 @@ const FooterLast = () => {
         <p className="m-0 cursor-pointer">Terms of Service</p>
       </div>
       
-    </div>
+    </footer>
   );
 };
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { meatCategories, specialCategories } from '../assets/data'; // Import category data
-
+import "../styles/Categories.css"
 const Categories = () => {
   return (
-    <div className="d-flex flex-row justify-content-center gap-4 align-items-center py-2 border-bottom border-2">
+    <div className=" justify-content-center align-items-center py-2 border-bottom border-2 categories-container">
       
       {/* Meat Categories Section */}
       <div className="d-flex flex-row justify-content-center gap-4 align-items-center border-end border-2 pt-2 pe-5">

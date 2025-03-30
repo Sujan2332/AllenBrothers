@@ -24,3 +24,9 @@ body .text-danger{
 body .bg-danger{
     background: #98002e !important;
 }
+
+@media (max-width:768px){
+    .main{
+        padding: 20px;
+    }
+}

@@ -1,21 +1,22 @@
 import React from "react";
 import { footerData } from "../assets/data"; // Importing footer data
 import logo from "../assets/Allen-Brothers-Logo.png"; // Importing company logo
+import "../styles/Footer.css"
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-800 py-4">
-      <div className="d-flex flex-row align-items-start justify-content-between gap-4">
+    <footer className="bg-gray-100 text-gray-800 py-4 ">
+      <div className="d-flex align-items-start justify-content-between gap-4 footer-container">
         
         {/* 🏢 Company Information Section */}
-        <div className="w-25">
+        <div className="compnay-info-section">
           <img
             src={logo}
             alt="Company Logo"
             width="100%"
             style={{ border: "2px solid red" }}
           />
-          <p className="mt-2 text-sm">{footerData.companyInfo.description}</p>
+          <p className="mt-2 text-sm footer-company-desc">{footerData.companyInfo.description}</p>
 
           {/* 🌍 Social Media Links */}
           <div className="mt-3 d-flex align-items-start gap-3 justify-content-start">
