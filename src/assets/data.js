@@ -96,6 +96,54 @@ export const productData = {
       price: "$69.95",
       image: "https://example.com/beef-wellington.jpg",
     },
+    {
+      id: 5,
+      name: "Allen Brothers Angus Filet Mignon",
+      price: "$69.95",
+      image: "https://example.com/angus-filet.jpg", // Replace with actual image URL
+    },
+    {
+      id: 6,
+      name: "Wagyu Filet Mignon",
+      price: "$69.95",
+      image: "https://example.com/wagyu-filet.jpg",
+    },
+    {
+      id: 7,
+      name: "USDA Prime Bone-In Filet Mignon",
+      price: "$69.95",
+      image: "https://example.com/prime-filet.jpg",
+    },
+    {
+      id: 8,
+      name: "Individual Beef Wellington",
+      price: "$69.95",
+      image: "https://example.com/beef-wellington.jpg",
+    },
+    {
+      id: 9,
+      name: "Allen Brothers Angus Filet Mignon",
+      price: "$69.95",
+      image: "https://example.com/angus-filet.jpg", // Replace with actual image URL
+    },
+    {
+      id: 10,
+      name: "Wagyu Filet Mignon",
+      price: "$69.95",
+      image: "https://example.com/wagyu-filet.jpg",
+    },
+    {
+      id: 11,
+      name: "USDA Prime Bone-In Filet Mignon",
+      price: "$69.95",
+      image: "https://example.com/prime-filet.jpg",
+    },
+    {
+      id: 12,
+      name: "Individual Beef Wellington",
+      price: "$69.95",
+      image: "https://example.com/beef-wellington.jpg",
+    },
   ];
 
 
@@ -240,5 +288,77 @@ export const footerData = {
     },
   },
 };
+
+
+export const pricingOptions = [
+  { pack: "1 pack", steaks: "Includes 2 steaks", price: "$XX.XX", discount: "Save 10%" },
+  { pack: "2 pack", steaks: "Includes 4 steaks", price: "$XX.XX", discount: "Save 10%" },
+  { pack: "3 pack", steaks: "Includes 6 steaks", price: "$XX.XX", discount: "Save 15%" },
+  { pack: "4 pack", steaks: "Includes 8 steaks", price: "$XX.XX", discount: "Save 20%" }
+];
+
+
+// List of product categories
+export const meatCategories = ["Beef", "Lamb", "Pork", "Seafood", "Poultry", "Veal", "Game"];
+
+// List of additional categories (specialty)
+export const specialCategories = [
+  { name: "Gift Center", isDeal: false },
+  { name: "Bundles", isDeal: false },
+  { name: "Deals!", isDeal: true } // Marked as a deal
+];
+
+
+export const product = {
+  name: "Allen Brothers Angus Filet Mignon",
+  isOnSale: true,
+  rating: 5,
+  reviewCount: 69,
+  packDetails: "2 steaks per pack",
+  itemCode: "#99085",
+  weights: [
+    { size: "6 oz.", thickness: "Approx. 1.5\" Thick" },
+    { size: "8 oz.", thickness: "Approx. 2\" Thick" },
+    { size: "10 oz.", thickness: "Approx. 2.5\" Thick" }
+  ],
+  price: 64.94,
+  originalPrice: 99.95,
+  discount: "Save $30.00 (30%)"
+};
+
+export const productImages = {
+  thumbnails: [
+    { type: "image", src: "/images/thumb1.jpg", alt: "Thumbnail 1" },
+    { type: "image", src: "/images/thumb2.jpg", alt: "Thumbnail 2" },
+    { type: "video", src: "/videos/demo.mp4", alt: "Product Video" }
+  ],
+  mainImage: "/images/main-product.jpg",
+  bestFor: [
+    { icon: "fa-solid fa-burger", text: "Grilling" },
+    { icon: "fa-solid fa-kitchen-set", text: "On the Skillet" }
+  ],
+  highlights: [
+    "Premium quality Angus beef, aged for optimal tenderness.",
+    "Individually vacuum-sealed for freshness and easy storage.",
+    "Ideal for grilling, pan-searing, or oven cooking."
+  ]
+};
+
+export const ratingsData = {
+  overallRating: 4.5,
+  totalReviews: 69,
+  ratingBreakdown: [
+    { star: 5, count: 30 },
+    { star: 4, count: 20 },
+    { star: 3, count: 10 },
+    { star: 2, count: 5 },
+    { star: 1, count: 4 }
+  ]
+};
+
+export const reviewFilters = ["All Reviews", "Verified Buyers", "With Photos"];
+
+export const sortOptions = ["Most Recent", "Highest Rating", "Lowest Rating"];
+
 
 

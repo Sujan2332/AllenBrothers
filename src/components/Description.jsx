@@ -1,13 +1,26 @@
-import React from 'react'
-import CookingInstructions from './CookingInstructions'
-
+import React from "react";
+import CookingInstructions from "./CookingInstructions";
+import "../styles/Description.css"
 const Description = () => {
   return (
-    <div className='d-flex flex-row justify-content-between align-items-start gap-5 py-5'>
-      <CookingInstructions/>
-      <img src="" width="500px" height="500px" className='rounded-3'></img>
+    <div className="description-container d-flex flex-row justify-content-between align-items-start gap-5 py-5">
+      {/* Cooking Instructions Section */}
+      <div className="description-section">
+      <CookingInstructions />
+      </div>
+      {/* Product Video */}
+      <div className="description-section">
+      <video 
+        src="" 
+        width="100%" 
+        height="500" 
+        className="product-video rounded-3 border"
+        controls
+      />
+      </div>
+      
     </div>
-  )
-}
+  );
+};
 
-export default Description
+export default Description;

@@ -1,14 +1,23 @@
-import React from 'react'
-import ProductImg from './ProductImg'
-import ProductDescription from './ProductDescription'
-
+import React from "react";
+import ProductImg from "./ProductImg";
+import ProductDescription from "./ProductDescription";
+import "../styles/Hero.css"
 const Hero = () => {
   return (
-    <div className='d-flex flex-row justify-content-between gap-5 pb-5'>
-        <ProductImg/>
-        <ProductDescription/>
-    </div>
-  )
-}
+    <div className="hero-container d-flex flex-row justify-content-between gap-4 pb-5">
+      
+      {/* 🖼️ Product Image Section */}
+      <div className="hero-section">
+        <ProductImg />
+      </div>
 
-export default Hero
+      {/* 📝 Product Description Section */}
+      <div className="hero-section">
+        <ProductDescription />
+      </div>
+
+    </div>
+  );
+};
+
+export default Hero;

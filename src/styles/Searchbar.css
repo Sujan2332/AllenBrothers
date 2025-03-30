@@ -9,3 +9,22 @@ body{
 .searchbar{
     width: 100%;
 }
+
+.search-container {
+    position: relative;
+    width: 50%;
+}
+
+.search-input {
+    width: 100%;
+    padding-right: 40px; /* Space for icon */
+}
+
+.search-icon {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    cursor: pointer;
+}

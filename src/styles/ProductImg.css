@@ -1,0 +1,6 @@
+.main-product-img {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Ensures height = width */
+    object-fit: contain; /* Ensures the full image is visible */
+}

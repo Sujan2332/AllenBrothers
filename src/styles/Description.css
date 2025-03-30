@@ -1,0 +1,10 @@
+.description-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.description-section {
+    flex: 1;
+    max-width: 50%;
+}
